@@ -1,3 +1,6 @@
 #files
 networkFiles
-data
+database
+private
+routerdb
+uploads
