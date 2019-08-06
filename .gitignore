@@ -4,3 +4,6 @@ database
 private
 routerdb
 uploads
+
+#files related to premissioned networks
+pantheon.ports
