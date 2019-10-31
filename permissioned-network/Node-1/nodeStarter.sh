@@ -1,5 +1,5 @@
 #All hosts can access the HTTP JSON-RPC API using the --host-whitelist option
-pantheon --data-path=data --genesis-file=../genesis.json \
+../../build/pantheon-1.2.0/bin/pantheon --data-path=data --genesis-file=../genesis.json \
 --permissions-nodes-config-file-enabled --permissions-accounts-config-file-enabled \
 --rpc-http-enabled --rpc-http-api=ADMIN,ETH,NET,PERM,IBFT --host-whitelist="*" \
 --rpc-http-cors-origins="*"
@@ -11,3 +11,4 @@ pantheon --data-path=data --genesis-file=../genesis.json \
 #it is independent wether the network is permissioned or not. In that case nodes are not discoverable
 #and are only connected through static list. 
 #By default discovery-enabled is true)
+#
