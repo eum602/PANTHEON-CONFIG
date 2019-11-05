@@ -4,6 +4,7 @@ database
 private
 routerdb
 uploads
+DATABASE_METADATA.json
 
 #files related to premissioned networks
 pantheon.ports

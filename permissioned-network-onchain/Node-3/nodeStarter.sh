@@ -1,13 +1,13 @@
 . ../env.sh
-#p2p-port is for peer discovery
 #All hosts can access the HTTP JSON-RPC API using the --host-whitelist option
-#All domains can access the node using the HTTP JSON-RPC API using the 
-#--rpc-http-cors-origins option
 pantheon --data-path=data --genesis-file=../genesis.json \
---permissions-nodes-config-file-enabled --permissions-accounts-config-file-enabled \
+--p2p-port=30305 \
 --rpc-http-enabled --rpc-http-api=ADMIN,ETH,NET,PERM,IBFT --host-whitelist="*" \
---rpc-http-cors-origins="all" --p2p-port=30305 --rpc-http-port=8547 \
---bootnodes=$PANTHEON_BOOTNODE_1
-#Nodes and accounts permissions are enabled using the --permissions-nodes-config-file-enabled and
-#--permissions-accounts-config-file-enabled options
-#--permissions-nodes-config-file-enabled --permissions-accounts-config-file-enabled \
+--rpc-http-port=8547 \
+--rpc-http-cors-origins="all" \
+--bootnodes=$PANTHEON_BOOTNODE
+
+# --permissions-accounts-contract-enabled \
+# --permissions-accounts-contract-address=0x0000000000000000000000000000000000008888 \
+# --permissions-nodes-contract-enabled \
+# --permissions-nodes-contract-address=0x0000000000000000000000000000000000009999 \
