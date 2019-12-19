@@ -1,12 +1,10 @@
 #All hosts can access the HTTP JSON-RPC API using the --host-whitelist option
 #do not forget copying generated genesis.json from netwokFiles folder to the root directory
-. ../env.sh
 pantheon --data-path=data --genesis-file=../genesis.json \
---bootnodes=$PANTHEON_BOOTNODE \
---p2p-port=30303 --rpc-http-enabled --rpc-http-api=ETH,NET,IBFT,EEA,PRIV --host-whitelist="*" \
---rpc-http-cors-origins="all" --rpc-http-port=8545 \
---privacy-enabled --privacy-url=http://127.0.0.1:8888 \
---privacy-public-key-file=Orion/nodeKey.pub --min-gas-price=0 
+--p2p-port=30302 --rpc-http-enabled --rpc-http-api=ETH,NET,IBFT,EEA,PRIV --host-whitelist="*" \
+--rpc-http-cors-origins="all" --rpc-http-port=8544 \
+--privacy-enabled --privacy-url=http://127.0.0.1:8887 \
+--privacy-public-key-file=Orion/nodeKey.pub --min-gas-price=0
 
 # --privacy-enabled enables privacy
 # --privacy-url specifies the Orion node URL (clienturl in orion.conf)
