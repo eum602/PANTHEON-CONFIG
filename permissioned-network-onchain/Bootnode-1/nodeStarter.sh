@@ -6,4 +6,5 @@ pantheon --data-path=data --genesis-file=../genesis.json \
 --rpc-http-enabled --rpc-http-api=ADMIN,ETH,NET,PERM,IBFT --host-whitelist="*" \
 --rpc-http-port=8544 \
 --rpc-http-cors-origins="all" \
+--min-gas-price=0
 #--logging=ALL
