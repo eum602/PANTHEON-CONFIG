@@ -7,5 +7,5 @@ pantheon --data-path=data --genesis-file=../genesis.json \
 --rpc-http-enabled --rpc-http-api=ADMIN,ETH,NET,PERM,IBFT --host-whitelist="*" \
 --rpc-http-port=8549 \
 --rpc-http-cors-origins="all" \
---bootnodes=$PANTHEON_BOOTNODE \
+--bootnodes=$PANTHEON_REGULAR_BOOTNODE \
 --min-gas-price=0

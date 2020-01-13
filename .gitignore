@@ -5,6 +5,9 @@ private
 routerdb
 uploads
 DATABASE_METADATA.json
-
+*.log
 #files related to premissioned networks
 pantheon.ports
+
+#folder
+logs
