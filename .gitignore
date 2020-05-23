@@ -6,6 +6,7 @@ routerdb
 uploads
 DATABASE_METADATA.json
 *.log
+*.cache
 #files related to premissioned networks
 pantheon.ports
 
